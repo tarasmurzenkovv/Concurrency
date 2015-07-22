@@ -13,7 +13,7 @@ public class WaitNotifyThreadFactory extends ProducerReplacerThreadFactory {
                                    BlockingQueue<String> destination) {
 
         try{
-            this.checkParameters();
+            this.checkParameters(nameOfProducerThread,nameOfReplacerThread,source,destination);
         }catch (IllegalArgumentException ex){
             ex.printStackTrace();
         }

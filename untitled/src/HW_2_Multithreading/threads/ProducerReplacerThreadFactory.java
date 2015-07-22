@@ -21,7 +21,10 @@ public abstract class ProducerReplacerThreadFactory {
         return configuredThread;
     }
 
-    protected void checkParameters(){
+    protected void checkParameters(String nameOfProducerThread,
+                                   String nameOfReplacerThread,
+                                   BlockingQueue<String> source,
+                                   BlockingQueue<String> destination){
         if (source == null)
             throw new NullPointerException("The source of the messages cannot be null. " +
                     "Check, if you have initialised it");
