@@ -5,9 +5,6 @@ import HW_2_Multithreading.producer_replacer.Replacer;
 import HW_2_Multithreading.Utilities;
 import HW_2_Multithreading.data.BlockingQueue;
 
-/**
- * Created by terance on 21.07.15.
- */
 public class WaitNotifyThreadFactory extends ProducerReplacerThreadFactory {
     @Override
     public void spawnDaemonThreads(String nameOfProducerThread,
@@ -15,7 +12,6 @@ public class WaitNotifyThreadFactory extends ProducerReplacerThreadFactory {
                                    BlockingQueue<String> source,
                                    BlockingQueue<String> destination) {
 
-        // Check if the input data has been correctly supplied. Otherwise, throw a proper exception.
         try{
             this.checkParameters();
         }catch (IllegalArgumentException ex){

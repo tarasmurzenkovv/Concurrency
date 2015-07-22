@@ -9,10 +9,10 @@ public abstract class ProducerReplacerThreadFactory {
     BlockingQueue<String> source;
     BlockingQueue<String> destination;
 
-    abstract void spawnDaemonThreads(String nameOfProducerThread,
-                                     String nameOfReplacerThread,
-                                     BlockingQueue<String> source,
-                                     BlockingQueue<String> destination);
+    public abstract void spawnDaemonThreads(String nameOfProducerThread,
+                                            String nameOfReplacerThread,
+                                            BlockingQueue<String> source,
+                                            BlockingQueue<String> destination);
 
     protected Thread getConfiguredDaemonThread(Runnable runnable) {
         Thread configuredThread = new Thread(runnable);

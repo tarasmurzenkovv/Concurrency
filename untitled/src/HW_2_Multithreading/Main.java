@@ -23,7 +23,7 @@ public class Main {
         // ProducerReplacerThreadFactory producerReplacerThreadFactory = new WaitNotifyThreadFactory();
         //Utilities.spawnDaemonThreads("Producer", "Replacer", source, destination);
 
-        producerReplacerThreadFactory.spawnDaemonThread("Producer", "Replacer", source,destination);
+        producerReplacerThreadFactory.spawnDaemonThreads("Producer", "Replacer", source,destination);
 
         for (int i = 0; i < Utilities.NUMBER_OF_MESSAGES_TO_READ; i++) {
             System.out.println(destination.poll());
