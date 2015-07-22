@@ -1,11 +1,12 @@
-package HW_2_Multithreading.data;
+package HW_2_Multithreading.data_structure;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * Created by terance on 21.07.15.
+ * Blocking queue based on java Lock object.
+ * Poll and offer are using Lock object instead of wait-notify. 
  */
 public class BlockingQueueWithLocks<E> extends BlockingQueueImpl<E> {
 

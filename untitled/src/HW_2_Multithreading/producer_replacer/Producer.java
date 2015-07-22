@@ -1,7 +1,7 @@
 package HW_2_Multithreading.producer_replacer;
 
 import HW_2_Multithreading.Utilities;
-import HW_2_Multithreading.data.BlockingQueue;
+import HW_2_Multithreading.data_structure.BlockingQueue;
 
 /**
  * This class encapsulates insertion logic into an instance of a Runnable

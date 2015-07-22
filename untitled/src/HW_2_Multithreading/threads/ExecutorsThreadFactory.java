@@ -1,6 +1,6 @@
 package HW_2_Multithreading.threads;
 import HW_2_Multithreading.Utilities;
-import HW_2_Multithreading.data.BlockingQueue;
+import HW_2_Multithreading.data_structure.BlockingQueue;
 
 import HW_2_Multithreading.producer_replacer.Producer;
 import HW_2_Multithreading.producer_replacer.Replacer;

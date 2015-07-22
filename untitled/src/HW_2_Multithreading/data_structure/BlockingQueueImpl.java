@@ -1,4 +1,4 @@
-package HW_2_Multithreading.data;
+package HW_2_Multithreading.data_structure;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -24,7 +24,7 @@ public class BlockingQueueImpl<E> implements BlockingQueue<E> {
     public BlockingQueueImpl(int capacity) {
 
         this.capacity = capacity;
-        this.storage = new PriorityQueue<E>(capacity);
+        this.storage = new PriorityQueue<>(capacity);
     }
 
     /**

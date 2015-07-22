@@ -1,4 +1,4 @@
-package HW_2_Multithreading.data;
+package HW_2_Multithreading.data_structure;
 
 /**
  * Interface that provides methods of the Blocking queue

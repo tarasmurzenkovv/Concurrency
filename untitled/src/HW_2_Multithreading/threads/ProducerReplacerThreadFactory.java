@@ -1,7 +1,7 @@
 package HW_2_Multithreading.threads;
 
 import HW_2_Multithreading.Utilities;
-import HW_2_Multithreading.data.BlockingQueue;
+import HW_2_Multithreading.data_structure.BlockingQueue;
 
 public abstract class ProducerReplacerThreadFactory {
 
