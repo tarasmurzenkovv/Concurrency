@@ -10,10 +10,10 @@ import HW_2_Multithreading.data.BlockingQueue;
  */
 public class WaitNotifyThreadFactory extends ProducerReplacerThreadFactory {
     @Override
-    public void spawnDaemonThread(String nameOfProducerThread,
-                                  String nameOfReplacerThread,
-                                  BlockingQueue<String> source,
-                                  BlockingQueue<String> destination) {
+    public void spawnDaemonThreads(String nameOfProducerThread,
+                                   String nameOfReplacerThread,
+                                   BlockingQueue<String> source,
+                                   BlockingQueue<String> destination) {
 
         // Check if the input data has been correctly supplied. Otherwise, throw a proper exception.
         try{

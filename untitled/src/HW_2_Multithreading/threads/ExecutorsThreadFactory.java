@@ -9,10 +9,10 @@ import java.util.concurrent.*;
 public class ExecutorsThreadFactory extends ProducerReplacerThreadFactory {
 
     @Override
-    public void spawnDaemonThread(String nameOfProducerThread,
-                                  String nameOfReplacerThread,
-                                  HW_2_Multithreading.data.BlockingQueue<String> source,
-                                  HW_2_Multithreading.data.BlockingQueue<String> destination) {
+    public void spawnDaemonThreads(String nameOfProducerThread,
+                                   String nameOfReplacerThread,
+                                   HW_2_Multithreading.data.BlockingQueue<String> source,
+                                   HW_2_Multithreading.data.BlockingQueue<String> destination) {
 
         try {
             this.checkParameters();
