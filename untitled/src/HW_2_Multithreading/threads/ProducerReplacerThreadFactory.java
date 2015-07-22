@@ -4,10 +4,6 @@ import HW_2_Multithreading.Utilities;
 import HW_2_Multithreading.data.BlockingQueue;
 
 public abstract class ProducerReplacerThreadFactory {
-    String nameOfProducerThread;
-    String nameOfReplacerThread;
-    BlockingQueue<String> source;
-    BlockingQueue<String> destination;
 
     public abstract void spawnDaemonThreads(String nameOfProducerThread,
                                             String nameOfReplacerThread,
