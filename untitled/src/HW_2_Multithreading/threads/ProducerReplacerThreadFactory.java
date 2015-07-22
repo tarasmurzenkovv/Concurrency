@@ -14,14 +14,14 @@ public abstract class ProducerReplacerThreadFactory {
                                     BlockingQueue<String> source,
                                     BlockingQueue<String> destination);
 
-    public Thread getConfiguredDaemonThread(Runnable runnable) {
+    protected Thread getConfiguredDaemonThread(Runnable runnable) {
         Thread configuredThread = new Thread(runnable);
 
         configuredThread.setDaemon(true);
         return configuredThread;
     }
 
-    public void checkParameters(){
+    protected void checkParameters(){
         if (source == null)
             throw new NullPointerException("The source of the messages cannot be null. " +
                     "Check, if you have initialised it");
