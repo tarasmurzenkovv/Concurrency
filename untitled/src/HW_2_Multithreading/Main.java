@@ -16,12 +16,14 @@ public class Main {
         BlockingQueue<String> source = new BlockingQueueWithLocks<>(Utilities.STORAGE_CAPACITY);
         BlockingQueue<String> destination = new BlockingQueueWithLocks<>(Utilities.STORAGE_CAPACITY);
 
+        // Create, configure and start threads.
         ProducerReplacerThreadFactory producerReplacerThreadFactory = new ExecutorsThreadFactory();
 
-        // Create, configure and start threads.
+        
+        // ProducerReplacerThreadFactory producerReplacerThreadFactory = new WaitNotifyThreadFactory();
         //Utilities.spawnDaemonThreads("Producer", "Replacer", source, destination);
 
-        Utilities.createExecutors("Producer", "Replacer", source,destination);
+        producerReplacerThreadFactory.spawnDaemonThread("Producer", "Replacer", source,destination);
 
         for (int i = 0; i < Utilities.NUMBER_OF_MESSAGES_TO_READ; i++) {
             System.out.println(destination.poll());

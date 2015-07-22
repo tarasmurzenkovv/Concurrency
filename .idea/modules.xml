@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/untitled/JavaStudying.iml" filepath="$PROJECT_DIR$/untitled/JavaStudying.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/The_Complete_Reference.iml" filepath="$PROJECT_DIR$/.idea/The_Complete_Reference.iml" />
-      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
     </modules>
   </component>
 </project>
